@@ -27,7 +27,7 @@
             <td><?php echo $value[2] ?></td>
             <td><?php echo $value[3] ?></td>
             <td><?php echo number_format($value[4], 10, ".", "") * 1000000 ?></td>
-            <?php if ($value[5] === "FALSE") { ?>
+            <?php if ($value[5] === "FALSE" || $value[5] === "ERROR") { ?>
                 <td class = "red"> <?php echo $value[5] ?></td>
             <?php } ?>
             <?php if ($value[5] === "TRUE") { ?>
